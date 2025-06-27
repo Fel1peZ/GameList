@@ -42,8 +42,8 @@ require_once("util/Conexao.php");
             return $jogos;
         }
 
-        public function removerJogos(int $idJogo){
-            $sql = " DELETE  FROM personagens  WHERE id = ?";
+        public function removerJogos($idJogo){
+            $sql = " DELETE  FROM listajogos  WHERE id = ?";
 
             $con = Conexao::getConexao();
 
