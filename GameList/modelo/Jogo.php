@@ -9,7 +9,16 @@
             private $console;
             private $diretor;
             private $img;
+            
 
+            public function __construct($titulo, $genero, $dataLancamento, $console, $diretor, $img) {
+                $this->titulo = $titulo;
+                $this->genero = $genero;
+                $this->dataLancamento = $dataLancamento;
+                $this->console = $console;
+                $this->diretor = $diretor;
+                $this->img = $img;
+            }
             /**
              * Get the value of id
              */
